@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>GCQC: GCloud Quick Check</title>
+</head>
+<body>
+    <h1>GCQC</h1>
+    <h2>recomendation</h2>
+    <h3>Public Facing Buckets</h3>
+    <p>Direct internet-facing buckets on Google Cloud Platform can put your organization's sensitive data at risk of unauthorized access or data breaches. Here is some cybersecurity advice and a step-by-step guide on how to secure your organization's buckets on Google Cloud Platform:</p>
+    <ol>
+        <li>Review all Google Cloud Storage buckets in your organization and identify any that are directly accessible from the internet.</li>
+        <li>Restrict access to these buckets by setting up a VPC Service Control perimeter or configuring an HTTP(S) load balancer with Cloud Armor security policies to filter traffic.</li>
+        <li>Implement access control policies that restrict access to these buckets to only authorized personnel, using IAM roles and permissions, Object Access Control Lists (ACLs), and/or Bucket Policies.</li>
+        <li>Use Cloud Audit Logging to track all access to these buckets, including authorized and unauthorized access attempts.</li>
+    </ol>
+    <p>Here's a step-by-step guide on how to secure direct internet-facing buckets on Google Cloud Platform:</p>
+    <ol>
+        <li>Log in to your Google Cloud Console.</li>
+        <li>Navigate to the Google Cloud Storage bucket that is directly accessible from the internet.</li>
+        <li>Configure a VPC Service Control perimeter or an HTTP(S) load balancer with Cloud Armor security policies to restrict access to the bucket.</li>
+        <li>Configure IAM roles and permissions, Object Access Control Lists (ACLs), and/or Bucket Policies to restrict access to the bucket to only authorized personnel.</li>
+        <li>Enable Cloud Audit Logging to track all access to the bucket, including authorized and unauthorized access attempts.</li>
+    </ol>
+    <p>By following these steps, you can significantly improve your organization's security posture and reduce the risk of unauthorized access or data breaches due to direct internet-facing buckets on Google Cloud Platform.</p>
+    <h3>Services Using Default Service Accounts</h3>
+    <p>Using default passwords on Google Cloud Services can put your organization's data at risk of unauthorized access by malicious actors. To improve your organization's security posture, here is some cybersecurity advice and a step-by-step guide on how to change default passwords on Google Cloud Services:</p>
+    <ol>
+        <li>Ensure that all default passwords on Google Cloud Services are identified and changed. This includes default passwords on virtual machine instances, database instances, and other Google Cloud Services.</li>
+        <li>Use strong passwords that meet Google's recommended password strength requirements, including a combination of uppercase and lowercase letters, numbers, and special characters. </li>
+        <li>Implement multi-factor authentication (MFA) for all users who have access to Google Cloud Services. This provides an additional layer of security and helps prevent unauthorized access even if a password is compromised.</li>
+    </ol>
+    <p>Here's a step-by-step guide on how to change default passwords on Google Cloud Services:</p>
+    <ol>
+        <li>Log in to your Google Cloud Console.</li>
+        <li>Navigate to the service that you want to update the default password for (e.g., virtual machine instances, database instances).</li>
+        <li>Select the instance for which you want to change the default password.</li>
+        <li>Click on the "Edit" button to edit the instance settings.</li>
+        <li>Locate the "Password" field and enter a new, strong password that meets the recommended requirements.</li>
+        <li>Save the changes and repeat this process for all instances that have default passwords.</li>
+    </ol>
+    <p>By following these steps, you can significantly improve your organization's security posture and reduce the risk of unauthorized access to your Google Cloud Services.</p>
+    <h3>Firewall Rules</h3>
+    <p>Weak firewall rules on Google Cloud Platform can leave your organization's resources vulnerable to unauthorized access or exploitation by malicious actors. Here is some cybersecurity advice and a step-by-step guide on how to change weak firewall rules on Google Cloud Platform:</p>
+    <ol>
+        <li>Identify all firewall rules that are currently in place and assess their effectiveness in protecting your organization's resources. This includes evaluating the rules' scope, direction, protocol, ports, and sources and destinations.</li>
+        <li>Update or remove any firewall rules that are not needed or are no longer effective in protecting your organization's resources. This includes removing any rules that allow access from all IP ranges or that allow access on insecure protocols or ports.</li>
+        <li>Use Google Cloud Platform's recommended firewall rules to ensure that your organization's resources are protected against common cyber attacks. This includes creating firewall rules that allow access only from trusted IP ranges, protocols, and ports.</li>
+    </ol>
+    <p>Here's a step-by-step guide on how to change weak firewall rules on Google Cloud Platform:</p>
+    <ol>
+        <li>Log in to your Google Cloud Console.</li>
+        <li>Navigate to the VPC network that you want to update the firewall rules for.</li>
+        <li>Click on the "Firewall rules" tab to view the existing firewall rules.</li>
+        <li>Select the firewall rule that you want to update or remove.</li>
+        <li>Click on the "Edit" button to edit the firewall rule settings.</li>
+        <li>Update the firewall rule settings to ensure that the rule is effective in protecting your organization's resources.</li>
+        <li>Save the changes and repeat this process for all firewall rules that need to be updated or removed.</li>
+    </ol>
+    <p>By following these steps, you can significantly improve your organization's security posture and reduce the risk of unauthorized access or exploitation of your resources on Google Cloud Platform.</p>
+    <footer>
+        Author: Ali Taheri H.A  
+        <br> &copy; <em id="date">2023 </em>Douglas Collage Resaech Project
+    </footer>
+</body>
+</html>

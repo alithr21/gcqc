@@ -1,0 +1,121 @@
+/* styles.css */
+body {
+    background-color: #5ABCB9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cascadia Mono', monospace;
+    color: #393E41;
+}
+
+h1 {
+    font-size: 6em;
+    font-family: 'Niagara Solid', sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom:60px;
+}
+
+button {
+    background-color: #E94F37;
+    border: none;
+    color: #393E41;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em 2em;
+    margin: 0.5em;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* styles.css */
+body {
+    background-color: #5ABCB9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*height: 100vh;*/
+    font-family: 'Cascadia Mono', monospace;
+    color: #393E41;
+}
+
+
+button {
+    background-color: #E94F37;
+    border: none;
+    color: #393E41;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em 2em;
+    margin: 0.5em;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+
+button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#loadingBarContainer {
+  width: 100%;
+  background-color: #ddd;
+  margin-top: 1em;
+  height: 10px;
+  position: relative;
+}
+
+#loadingBar {
+  background-color: #E94F37;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+}
+
+
+#contact-btn {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
+
+p {
+    margin: 1em;
+    display: flex;
+}
+ol {
+    margin: 2em;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #393E41;
+    color: white;
+    text-align: center;
+  }

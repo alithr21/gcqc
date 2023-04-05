@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>GCQC: GCloud Quick Check</title>
+    <script>
+        window.onload = function() {
+          document.getElementById("btn1").addEventListener("click", function(event) {
+            event.preventDefault();
+            const runInventoryUrl = document.getElementById("run_inventory_url").value;
+            showLoadingBar(runInventoryUrl);
+          });
+        
+          document.getElementById("btn2").addEventListener("click", function(event) {
+            event.preventDefault();
+            const runVulnerabilitiesUrl = document.getElementById("run_vulnerabilities_url").value;
+            showLoadingBar(runVulnerabilitiesUrl);
+          });
+        };
+        
+        function showLoadingBar(url) {
+          const loadingBar = document.getElementById("loadingBar");
+          const container = document.getElementById("loadingBarContainer");
+          container.style.display = "block";
+          let width = 0;
+          const duration = 20000; // 10 seconds
+          const interval = setInterval(frame, duration / 100);
+        
+          function frame() {
+            if (width >= 100) {
+              clearInterval(interval);
+              window.location.href = url;
+            } else {
+              width++;
+              loadingBar.style.width = width + '%';
+            }
+          }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>GCQC</h1>
+    <h2>Google Cloud Platform Quick Health Check</h2>
+    <a href="{{ url_for('run_inventory') }}"><button id="btn1" >INVENTORY</button></a>
+    <a href="{{ url_for('run_vulnerabilities') }}"><button id="btn2" >VULNERABILITIES</button></a>
+    <a href="{{ url_for('recBucket') }}"><button id="btn2" >RECOMENDATION</button></a>
+    <a href="{{ url_for('contact') }}" style="position: absolute; top: 0; right: 0;"><button>Contact</button></a>
+    <div id="loadingBarContainer" style="display: none;">
+        <div id="loadingBar"></div>
+      </div>   
+    <p style=" text-align: center; margin-top: 100px;">Developed as a Research Project for Douglas Collage Computer Sience Division<br>-make sure the shell your are running this application is authorized <br>-If you see an error after the new pages are loaded, give it a few second and refresh it</p>
+    <input type="hidden" id="run_inventory_url" value="{{ url_for('run_inventory') }}">
+    <input type="hidden" id="run_vulnerabilities_url" value="{{ url_for('run_vulnerabilities') }}">
+       
+    <footer>
+        Author: Ali Taheri H.A  
+        <br> &copy; <em id="date">2023 </em>Douglas Collage Resaech Project
+    </footer>
+</body>
+</html>
