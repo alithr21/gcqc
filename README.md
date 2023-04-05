@@ -32,6 +32,8 @@ on top of inventory and vulnerability, you have a recommendation page that would
 
 ** Important note: Only an admin with full privilege can run the program completely with all the functions. Make sure you authorize your shell environment before running the application.
 
+*Ensure that Python 3.x and the Flask library are installed.
+
 Contact me regarding any issues or bugs.
 malitrix@yahoo.com
 
